@@ -168,7 +168,7 @@ function ContactSection() {
               <div className="flex items-center gap-3">
                 <FiMessageSquare size={20} className="text-blue-600" />
                 <div>
-                  <p className="font-medium text-slate-900">Send us Text</p>
+                  <p className="font-medium text-slate-900">Text Us</p>
                   <p className="text-slate-600 text-sm">+1 800 000 0000</p>
                 </div>
               </div>
