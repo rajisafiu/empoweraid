@@ -16,6 +16,7 @@ export const programs = [
     amount: "$30,000",
     description: "Helping young innovators launch new ventures"
   }
+  
 
 ];
 

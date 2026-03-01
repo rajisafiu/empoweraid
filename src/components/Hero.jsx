@@ -4,15 +4,13 @@ import { Link } from "react-router-dom";
 
 const Hero = ({ backgroundImage }) => {
   return (
-    <section
-      className="relative h-[85vh] md:h-[600px] bg-cover bg-center flex items-center justify-center"
+  <section
+      className="relative h-[85vh] md:h-[600px] flex items-center justify-center bg-cover bg-center overflow-hidden"
       style={{
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("${backgroundImage}")`,
       }}
     >
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-
+     
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 max-w-3xl">
         <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
