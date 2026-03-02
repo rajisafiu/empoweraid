@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Added this import
 
 const PrivacyPolicy = () => {
   return (
@@ -68,10 +69,19 @@ const PrivacyPolicy = () => {
               <p>Email: privacy@empoweraid.org</p>
               <p>Phone: +1 800 000 0000</p>
             </div>
-            
           </div>
-          
         </section>
+
+        {/* Added Back to Home Button */}
+        <div className="mt-12 text-center border-t border-slate-100 pt-8">
+          <Link 
+            to="/" 
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="text-green-600 font-semibold hover:text-green-700 transition-colors"
+          >
+            ← Back to Home
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -1,8 +1,17 @@
-import React from 'react'
 
+
+import React from 'react';
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  // Helper function to scroll to top smoothly
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <footer className="bg-gray-900 text-gray-300 pt-12 pb-6 mt-16">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
@@ -25,22 +34,22 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link to="/" className="hover:text-white transition">
+              <Link to="/" onClick={scrollToTop} className="hover:text-white transition">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-white transition">
+              <Link to="/about" onClick={scrollToTop} className="hover:text-white transition">
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/privacy" className="hover:text-white transition">
+              <Link to="/privacy" onClick={scrollToTop} className="hover:text-white transition">
                 Privacy Policy
               </Link>
             </li>
             <li>
-              <Link to="/terms" className="hover:text-white transition">
+              <Link to="/terms" onClick={scrollToTop} className="hover:text-white transition">
                 Terms & Conditions
               </Link>
             </li>
@@ -53,12 +62,12 @@ const Footer = () => {
             Contact Us
           </h3>
           <p className="text-sm mb-2">
-            📞 Text: +1 800 123 4567
+            📞 Text: +16402867042
           </p>
-          <p className="text-sm mb-2">
-            📧 Email: support@empoweraid.org
+          <p className="text-sm mb-2 font-medium">
+            📧 Email: <a href="mailto:support@empoweraid.org" className="hover:text-green-400 transition">support@empoweraid.org</a>
           </p>
-          <p className="text-sm">
+          <p className="text-sm text-gray-400">
             Text us directly for application assistance and inquiries.
           </p>
         </div>

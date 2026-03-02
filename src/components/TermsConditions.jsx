@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const TermsAndConditions = () => {
+  // Helper function for smooth scrolling
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className="bg-slate-50 min-h-screen py-16 px-6 md:px-20">
       <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 shadow-sm rounded-2xl">
@@ -30,12 +38,11 @@ const TermsAndConditions = () => {
             </ul>
           </div>
 
-
           {/* Section 3 */}
           <div>
             <h2 className="text-xl font-bold text-slate-900 mb-3">3. Use of Information</h2>
             <p>
-              Users agree that any information provided via our <Link to="/contact" className="text-green-600 hover:underline">Contact Form</Link> or application portals is accurate. Providing false or misleading information will result in immediate disqualification and possible legal action.
+              Users agree that any information provided via our <Link to="/contact" onClick={scrollToTop} className="text-green-600 hover:underline">Contact Form</Link> or application portals is accurate. Providing false or misleading information will result in immediate disqualification and possible legal action.
             </p>
           </div>
 
@@ -64,13 +71,18 @@ const TermsAndConditions = () => {
             <div className="mt-4 p-4 bg-slate-50 rounded-lg border border-slate-100">
               <p className="font-bold text-slate-900">EmpowerAid Legal Department</p>
               <p>Email: info@empoweraid.org</p>
-              <p>Address:Washington, DC, USA</p>
+              <p>Address: Washington, DC, USA</p>
             </div>
           </div>
         </section>
 
-        <div className="mt-12 text-center">
-          <Link to="/" className="text-green-600 font-semibold hover:text-green-700">
+        {/* Updated Back to Home Button with Scroll Logic */}
+        <div className="mt-12 text-center border-t border-slate-100 pt-8">
+          <Link 
+            to="/" 
+            onClick={scrollToTop}
+            className="text-green-600 font-semibold hover:text-green-700 transition-colors inline-block"
+          >
             ← Back to Home
           </Link>
         </div>
