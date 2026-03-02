@@ -101,14 +101,14 @@ function ContactSection() {
 
             {/* SMS Card */}
             <a 
-              href="sms:+18000000000" 
+              href="sms:+16402867042" 
               className="flex items-center justify-between bg-blue-50 p-4 rounded-2xl hover:bg-blue-100 transition cursor-pointer group"
             >
               <div className="flex items-center gap-3">
                 <FiPhone size={20} className="text-blue-600" />
                 <div>
                   <p className="font-medium text-slate-900">Text Us</p>
-                  <p className="text-slate-600 text-sm">+1 800 000 0000</p>
+                  <p className="text-slate-600 text-sm">+16402867042</p>
                 </div>
               </div>
               <span className="text-blue-600 text-xl group-hover:translate-x-1 transition-transform">→</span>
