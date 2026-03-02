@@ -45,7 +45,7 @@ function ContactSection() {
 
   // Helper for External Links
   const openWhatsApp = () => {
-    const phoneNumber = "18000000000"; // Replace with your digits only
+    const phoneNumber = "+16402867042"; // Replace with your digits only
     const message = encodeURIComponent("Hello! I would like to inquire about your grant programs.");
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
