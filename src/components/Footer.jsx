@@ -53,7 +53,7 @@ const Footer = () => {
             Contact Us
           </h3>
           <p className="text-sm mb-2">
-            📞 Phone: +1 800 123 4567
+            📞 Text: +1 800 123 4567
           </p>
           <p className="text-sm mb-2">
             📧 Email: support@empoweraid.org
