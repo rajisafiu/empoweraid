@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
             <p>We use the information we collect to:</p>
             <ul className="list-disc pl-6 mt-2 space-y-2">
               <li>Process and evaluate your grant applications.</li>
-              <li>Communicate with you regarding your status via email, SMS, or phone.</li>
+              <li>Communicate with you regarding your status via email, whatsaap or SMS.</li>
               <li>Improve our website functionality and user experience.</li>
               <li>Prevent fraudulent activity and ensure the security of our community.</li>
             </ul>
