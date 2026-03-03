@@ -10,6 +10,7 @@ function ContactSection() {
     address: "",
     occupation: "",
     income: "",
+    message: "", // Added message back to state
   });
   const [status, setStatus] = useState({ type: "", message: "" });
 
@@ -21,8 +22,7 @@ function ContactSection() {
     e.preventDefault();
     setStatus({ type: "loading", message: "Sending..." });
 
-    // REPLACE THIS URL with your actual Formspree ID
-    const FORMSPREE_URL = "https://formspree.io/f/xdalredv";
+    const FORMSPREE_URL = "https://formspree.io/f/xgoljnar";
 
     try {
       const response = await fetch(FORMSPREE_URL, {
@@ -36,7 +36,7 @@ function ContactSection() {
 
       if (response.ok) {
         setStatus({ type: "success", message: "Thank you! Your application has been sent. We will get back to you shortly." });
-        setFormData({ name: "", dob: "", phone: "", email: "", address: "", occupation: "", income: "" });
+        setFormData({ name: "", dob: "", phone: "", email: "", address: "", occupation: "", income: "", message: "" });
       } else {
         throw new Error();
       }
@@ -71,7 +71,6 @@ function ContactSection() {
             {/* Name & DOB */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input type="text" name="name" placeholder="Full Name *" value={formData.name} onChange={handleChange} required className="w-full border border-slate-200 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none transition-all" />
-              
               <div className="relative">
                 <span className="absolute top-1 left-4 text-[10px] text-slate-400 uppercase font-bold">Date of Birth *</span>
                 <input type="date" name="dob" value={formData.dob} onChange={handleChange} required className="w-full border border-slate-200 rounded-lg px-4 pt-5 pb-2 focus:ring-2 focus:ring-green-500 outline-none transition-all" />
@@ -93,13 +92,23 @@ function ContactSection() {
               <input type="text" name="income" placeholder="Monthly Income *" value={formData.income} onChange={handleChange} required className="w-full border border-slate-200 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none transition-all" />
             </div>
 
+            {/* Message Area - Added Back */}
+            <textarea 
+              name="message" 
+              placeholder="Tell us how we can help you or provide additional details... *" 
+              value={formData.message} 
+              onChange={handleChange} 
+              required 
+              className="w-full border border-slate-200 rounded-lg px-4 py-3 h-32 focus:ring-2 focus:ring-green-500 outline-none transition-all" 
+            />
+
             <button type="submit" disabled={status.type === "loading"} className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-lg transition-all shadow-lg active:scale-95 disabled:opacity-50">
               {status.type === "loading" ? "Processing..." : "Submit Application"}
             </button>
           </form>
         </div>
 
-        {/* Right: Info Panel */}
+        {/* Right Panel (24/7 Support) */}
         <div className="space-y-6">
           <div className="bg-green-50 p-6 rounded-2xl shadow-sm border border-green-100">
             <div className="flex items-center gap-3 mb-2">
@@ -110,11 +119,7 @@ function ContactSection() {
           </div>
 
           <div className="space-y-4">
-            {/* WhatsApp Card */}
-            <div 
-              onClick={openWhatsApp}
-              className="flex items-center justify-between bg-white border border-slate-100 p-5 rounded-2xl hover:bg-green-50 transition cursor-pointer group shadow-sm"
-            >
+            <div onClick={openWhatsApp} className="flex items-center justify-between bg-white border border-slate-100 p-5 rounded-2xl hover:bg-green-50 transition cursor-pointer group shadow-sm">
               <div className="flex items-center gap-4">
                 <div className="bg-green-100 p-3 rounded-full text-green-600 group-hover:bg-green-600 group-hover:text-white transition-colors">
                   <FiMessageSquare size={20} />
@@ -127,11 +132,7 @@ function ContactSection() {
               <span className="text-slate-300 text-xl group-hover:translate-x-1 group-hover:text-green-600 transition-all">→</span>
             </div>
 
-            {/* SMS/Text Card */}
-            <a 
-              href="sms:+16402867042" 
-              className="flex items-center justify-between bg-white border border-slate-100 p-5 rounded-2xl hover:bg-blue-50 transition cursor-pointer group shadow-sm"
-            >
+            <a href="sms:+16402867042" className="flex items-center justify-between bg-white border border-slate-100 p-5 rounded-2xl hover:bg-blue-50 transition cursor-pointer group shadow-sm">
               <div className="flex items-center gap-4">
                 <div className="bg-blue-100 p-3 rounded-full text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                   <FiPhone size={20} />
@@ -144,11 +145,7 @@ function ContactSection() {
               <span className="text-slate-300 text-xl group-hover:translate-x-1 group-hover:text-blue-600 transition-all">→</span>
             </a>
 
-            {/* Email Card */}
-            <a 
-              href="mailto:info@empoweraid.org" 
-              className="flex items-center justify-between bg-white border border-slate-100 p-5 rounded-2xl hover:bg-orange-50 transition cursor-pointer group shadow-sm"
-            >
+            <a href="mailto:info@empoweraid.org" className="flex items-center justify-between bg-white border border-slate-100 p-5 rounded-2xl hover:bg-orange-50 transition cursor-pointer group shadow-sm">
               <div className="flex items-center gap-4">
                 <div className="bg-orange-100 p-3 rounded-full text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition-colors">
                   <FiMail size={20} />
