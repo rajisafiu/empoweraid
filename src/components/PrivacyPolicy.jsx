@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
     <div className="bg-slate-50 min-h-screen py-16 px-6 md:px-20">
       <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 shadow-sm rounded-2xl">
         <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Privacy Policy</h1>
-        <p className="text-slate-500 mb-8 font-medium italic">Last Updated: March 2026</p>
+        <p className="text-slate-500 mb-8 font-medium italic">Last Updated: March 2024</p>
 
         <section className="space-y-8 text-slate-700 leading-relaxed">
           {/* Section 1 */}

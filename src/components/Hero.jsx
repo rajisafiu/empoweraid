@@ -32,7 +32,7 @@ const Hero = ({ backgroundImage }) => {
         </p>
 
         <Link
-          to="/contact"
+          to="/apply"
           onClick={scrollToTop} // Added smooth scroll logic here
           className="inline-block bg-green-600 hover:bg-green-700 transition duration-300 px-8 py-4 rounded-lg text-white font-semibold shadow-lg"
         >
