@@ -42,7 +42,7 @@ const TermsAndConditions = () => {
           <div>
             <h2 className="text-xl font-bold text-slate-900 mb-3">3. Use of Information</h2>
             <p>
-              Users agree that any information provided via our <Link to="/contact" onClick={scrollToTop} className="text-green-600 hover:underline">Contact Form</Link> or application portals is accurate. Providing false or misleading information will result in immediate disqualification and possible legal action.
+              Users agree that any information provided via our <Link to="/apply" onClick={scrollToTop} className="text-green-600 hover:underline">Application Form</Link> or application portals is accurate. Providing false or misleading information will result in immediate disqualification and possible legal action.
             </p>
           </div>
 
