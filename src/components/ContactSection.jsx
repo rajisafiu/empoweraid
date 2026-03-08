@@ -1,6 +1,7 @@
-
 import React from "react";
-import { FiMail, FiMessageSquare, FiClock, FiPhone } from "react-icons/fi";
+// Added FaWhatsapp from font-awesome and FiMessageCircle for a dedicated SMS look
+import { FiMail, FiMessageCircle, FiClock } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa"; 
 
 function ContactSection() {
   const whatsappNumber = "+16402867042";
@@ -18,7 +19,7 @@ function ContactSection() {
 
         <div className="grid md:grid-cols-1 gap-6 max-w-2xl mx-auto">
           
-          {/* 24/7 Availability - REVERTED TO ORIGINAL COLORS */}
+          {/* 24/7 Availability */}
           <div className="bg-green-50 p-6 rounded-2xl shadow-sm border border-green-100 flex flex-col items-center text-center">
             <div className="flex items-center gap-3 mb-2">
               <FiClock size={22} className="text-green-600" />
@@ -29,7 +30,7 @@ function ContactSection() {
 
           {/* Contact Methods */}
           <div className="grid gap-4">
-            {/* WhatsApp - Fixed Mouse Cursor */}
+            {/* WhatsApp - Swapped to FaWhatsapp */}
             <a 
               href={whatsappUrl}
               target="_blank"
@@ -38,28 +39,27 @@ function ContactSection() {
             >
               <div className="flex items-center gap-4">
                 <div className="bg-green-100 p-3 rounded-full text-green-600 group-hover:bg-green-600 group-hover:text-white transition-colors">
-                  <FiMessageSquare size={20} />
+                  <FaWhatsapp size={20} />
                 </div>
                 <div>
-                  <p className="font-black text-slate-900">Chat on WhatsApp</p>
+                  <p className="font-black text-slate-900">Click To Chat Us On WhatsApp</p>
                   <p className="text-slate-500 text-sm">Online 24/7</p>
                 </div>
               </div>
               <span className="text-slate-300 text-xl group-hover:translate-x-1 group-hover:text-green-600 transition-all">→</span>
             </a>
 
-            {/* SMS */}
+            {/* SMS - Swapped to FiMessageCircle */}
             <a 
-              href="sms:+16402867042" 
+              href="sms:+16186817034" 
               className="flex items-center justify-between bg-white border border-slate-100 p-5 rounded-2xl hover:bg-blue-50 transition-all group shadow-sm"
             >
               <div className="flex items-center gap-4">
                 <div className="bg-blue-100 p-3 rounded-full text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                  <FiPhone size={20} />
+                  <FiMessageCircle size={20} />
                 </div>
                 <div>
-                  <p className="font-black text-slate-900">Text Us Directly</p>
-                  <p className="text-slate-500 text-sm">+16186817034</p>
+                  <p className="font-black text-slate-900">Click To Text Us Directly</p>
                 </div>
               </div>
               <span className="text-slate-300 text-xl group-hover:translate-x-1 group-hover:text-blue-600 transition-all">→</span>

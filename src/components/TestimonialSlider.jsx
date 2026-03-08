@@ -8,7 +8,7 @@ import {AiFillStar} from "react-icons/ai"
  * @param {number} speed - Lower is faster (e.g., 2000 is very fast, 10000 is slow)
  * @param {number} slidesPerView - Number of visible cards
  */
-function TestimonialSlider({ data, slidesPerView = 3, speed = 4000 }) {
+function TestimonialSlider({ data, slidesPerView = 3, speed = 6000 }) {
   return (
     <section id="testimonials">
       <div className="w-full py-10">
