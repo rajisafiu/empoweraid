@@ -62,10 +62,10 @@ const Footer = () => {
             Contact Us
           </h3>
           <p className="text-sm mb-2">
-            📞 Text: +16402867042
+            📞 Text: +16186817034
           </p>
           <p className="text-sm mb-2 font-medium">
-            📧 Email: <a href="mailto:support@empoweraid.org" className="hover:text-green-400 transition">support@empoweraid.org</a>
+            📧 Email: <a href="mailto:support@empoweraid.org" className="hover:text-green-400 transition">info@empoweraid.site</a>
           </p>
           <p className="text-sm text-gray-400">
             Text us directly for application assistance and inquiries.

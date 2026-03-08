@@ -46,7 +46,7 @@ const Home = () => {
                 onClick={scrollToTop} // Applied smooth scroll logic here
                 className="inline-block bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-lg transition"
               >
-                Learn More
+                Discover More
               </Link>
             </div>
           ))}

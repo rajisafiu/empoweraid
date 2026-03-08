@@ -1,23 +1,22 @@
-
-
 export const programs = [
   {
-    tittle: "Small Business Support",
+    title: "Small Business Support",
     amount: "Up to $250,000",
-    description: "Funding support for entrepreneurs and small Business."
+    description:
+      "This program provides financial assistance and business development support for entrepreneurs and small business owners. It helps businesses expand operations, purchase equipment, hire employees, and improve overall productivity for long-term growth."
   },
   {
-    tittle: "Retiree Assiatance",
+    title: "Retiree Assistance",
     amount: "$150,000",
-    description: "Support for retired individuals and senior citizens.",
+    description:
+      "This program is designed to support retired individuals and senior citizens by providing financial relief and stability. The funding can help cover healthcare costs, housing improvements, daily living expenses, and other essential needs for a comfortable retirement."
   },
   {
-    tittle: "Youth Startup Funds",
+    title: "Youth Startup Funds",
     amount: "$50,000",
-    description: "Helping young innovators launch new ventures"
+    description:
+      "This initiative empowers young innovators and aspiring entrepreneurs by providing startup capital, mentorship opportunities, and guidance. It aims to help youth transform creative ideas into successful businesses that can contribute to economic growth."
   }
-  
-
 ];
 
-export default programs
+export default programs;

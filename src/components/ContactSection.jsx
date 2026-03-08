@@ -59,7 +59,7 @@ function ContactSection() {
                 </div>
                 <div>
                   <p className="font-black text-slate-900">Text Us Directly</p>
-                  <p className="text-slate-500 text-sm">+1 (640) 286-7042</p>
+                  <p className="text-slate-500 text-sm">+16186817034</p>
                 </div>
               </div>
               <span className="text-slate-300 text-xl group-hover:translate-x-1 group-hover:text-blue-600 transition-all">→</span>
@@ -76,7 +76,7 @@ function ContactSection() {
                 </div>
                 <div>
                   <p className="font-black text-slate-900">Official Support Email</p>
-                  <p className="text-slate-500 text-sm">info@empoweraid.org</p>
+                  <p className="text-slate-500 text-sm">info@empoweraid.site</p>
                 </div>
               </div>
               <span className="text-slate-300 text-xl group-hover:translate-x-1 group-hover:text-orange-600 transition-all">→</span>
