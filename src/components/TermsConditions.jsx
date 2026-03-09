@@ -70,7 +70,7 @@ const TermsAndConditions = () => {
             </p>
             <div className="mt-4 p-4 bg-slate-50 rounded-lg border border-slate-100">
               <p className="font-bold text-slate-900">EmpowerAid Legal Department</p>
-              <p>Email: info@empoweraid.org</p>
+              <p>Email: terms@empoweraid.site</p>
               <p>Address: Washington, DC, USA</p>
             </div>
           </div>

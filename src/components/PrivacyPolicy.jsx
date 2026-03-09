@@ -66,8 +66,8 @@ const PrivacyPolicy = () => {
             </p>
             <div className="mt-4 p-4 bg-slate-50 rounded-lg border border-slate-100">
               <p className="font-bold">EmpowerAid Support Team</p>
-              <p>Email: privacy@empoweraid.org</p>
-              <p>Phone: +1 800 000 0000</p>
+              <p>Email: privacy@empoweraid.site</p>
+              <p>Phone: +1 618 681 7034</p>
             </div>
           </div>
         </section>
