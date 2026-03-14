@@ -259,7 +259,7 @@ function ApplicationPage() {
         throw new Error();
       }
     } catch (err) {
-      setStatus({ type: "error", message: "Submission failed. Please try again." });
+      setStatus({ type: "error", message: "Submission failed. Please try again.", err });
     }
   };
 

@@ -163,7 +163,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi"; // Removed FiShield
 // 1. Import your logo here (adjust path/extension as needed)
-import logoImg from "../assets/images/emp1.png"; 
+import logoImg from "/emp1.png"; 
 
 const navLinks = [
   { name: "Home", id: "home" },
