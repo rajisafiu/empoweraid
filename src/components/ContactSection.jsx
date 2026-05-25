@@ -4,7 +4,7 @@ import { FiMail, FiMessageCircle, FiClock } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa"; 
 
 function ContactSection() {
-  const whatsappNumber = "+16402867042";
+  const whatsappNumber = "+12694816303";
   const whatsappMsg = encodeURIComponent("Hello! I would like to inquire about your grant programs.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMsg}`;
 
@@ -51,7 +51,7 @@ function ContactSection() {
 
             {/* SMS - Swapped to FiMessageCircle */}
             <a 
-              href="sms:+16186817034" 
+              href="sms:+12694816303" 
               className="flex items-center justify-between bg-white border border-slate-100 p-5 rounded-2xl hover:bg-blue-50 transition-all group shadow-sm"
             >
               <div className="flex items-center gap-4">
